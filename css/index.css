@@ -138,7 +138,7 @@ table {
 .slatebox {
   background: slategrey;
   border: 1px double black;
-  margin: 0 20%;
+  margin: 0 2%;
 }
 html {
   background: #fffaff;
@@ -147,6 +147,7 @@ html {
 html,
 body {
   height: 100%;
+  font-family: Impact, Charcoal, sans-serif;
 }
 h2 {
   font-size: 4rem;
@@ -161,6 +162,8 @@ h4 {
 }
 p {
   font-size: 1rem;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  line-height: 3;
 }
 .container {
   width: 1100px;
@@ -180,27 +183,36 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
 }
-section.intro {
+section .info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: slategrey;
+  border: 1px double black;
+  margin: 0 2%;
+}
+section .intro {
   margin: 0.5rem;
 }
 .skills {
-  background: slategrey;
-  border: 1px double black;
-  margin: 0 20%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .skills div {
-  margin: 0 2%;
   padding: 2%;
-  border: 1px double black;
-}
-.work {
   background: slategrey;
   border: 1px double black;
-  margin: 0 20%;
+  margin: 0 2%;
+}
+.work {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.job {
+  background: slategrey;
+  border: 1px double black;
+  margin: 0 2%;
+  padding: 3% 5%;
 }

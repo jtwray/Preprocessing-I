@@ -60,7 +60,8 @@ table {
 @secondary-color: slategrey;
 
 //font-stack
-
+@font: Impact, Charcoal, sans-serif;
+@subfont: 'Trebuchet MS', Helvetica, sans-serif;
 //mixins
 
 .centerevenly{
@@ -73,16 +74,18 @@ table {
 
 	background: @secondary-color;
 	border:1px double black;
-	margin:0 20%;
+	margin:0 2%;
 
 }
 
 html{
 	background: @background-color;
 	font-size:62.5%;
+	
 }
 html, body {
 	height: 100%;
+	font-family:  @font;
 
 }
 h2{
@@ -101,6 +104,8 @@ h4{
 }
 p{
 	font-size:1rem;
+	font-family: @subfont;
+	line-height: 3;
 }
 .container{
 	width:1100px;
@@ -126,13 +131,18 @@ nav a{
 	font-size:2rem;
 
 }
+section .info {
+.centerevenly;
+.slatebox;
 
-section.intro{
+}
+section .intro{
 	margin: .5rem;
+	
 
 }
 .skills {
-.slatebox;
+// .slatebox;
 .centerevenly;
 
 }
@@ -140,14 +150,17 @@ section.intro{
 	margin:0 2%;
 	padding:2%;
 	border:1px double black;
+	.slatebox;
+
 }
 
 .work {
-.slatebox;
-.centerevenly;
 
+.centerevenly;
 }
 .job{
+.slatebox;
+padding:3% 5%;
 
 }
 
