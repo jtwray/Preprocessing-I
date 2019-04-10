@@ -55,9 +55,27 @@ table {
 //variables
 //colors
 @main-color: firebrick; 
+@main-accent: lightcoral;
 @background-color:#fffaff;
 @secondary-color: slategrey;
+
 //font-stack
+
+//mixins
+
+.centerevenly{
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.slatebox{
+
+	background: @secondary-color;
+	border:1px double black;
+	margin:0 20%;
+
+}
 
 html{
 	background: @background-color;
@@ -71,9 +89,11 @@ h2{
 	font-size:4rem;
 	color: @main-color;
 
+
 }
 h3{
 	font-size:2rem;
+	color: @main-accent;
 
 }
 h4{
@@ -111,8 +131,20 @@ section.intro{
 	margin: .5rem;
 
 }
+.skills {
+.slatebox;
+.centerevenly;
 
-.WorkHistory {
+}
+.skills div{
+	margin:0 2%;
+	padding:2%;
+	border:1px double black;
+}
+
+.work {
+.slatebox;
+.centerevenly;
 
 }
 .job{

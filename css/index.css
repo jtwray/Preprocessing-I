@@ -130,6 +130,16 @@ table {
 * {
   box-sizing: border-box;
 }
+.centerevenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.slatebox {
+  background: slategrey;
+  border: 1px double black;
+  margin: 0 20%;
+}
 html {
   background: #fffaff;
   font-size: 62.5%;
@@ -144,6 +154,7 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+  color: lightcoral;
 }
 h4 {
   font-size: 1.5rem;
@@ -171,4 +182,25 @@ nav a {
 }
 section.intro {
   margin: 0.5rem;
+}
+.skills {
+  background: slategrey;
+  border: 1px double black;
+  margin: 0 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills div {
+  margin: 0 2%;
+  padding: 2%;
+  border: 1px double black;
+}
+.work {
+  background: slategrey;
+  border: 1px double black;
+  margin: 0 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
