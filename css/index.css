@@ -136,7 +136,7 @@ body {
 }
 .centerevenly {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 .slatebox {
@@ -149,68 +149,87 @@ html {
   font-size: 62.5%;
   font-family: Impact, Charcoal, sans-serif;
 }
-h2 {
+html .container {
+  width: 1100px;
+}
+@media (max-width: 500px) {
+  html .container {
+    width: 100%;
+  }
+}
+html .container li {
+  font-size: 1.5rem;
+}
+html .container p {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  line-height: 2;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  html .container p {
+    font-size: 1em;
+    padding: 2em;
+  }
+}
+html .container h2 {
   font-size: 4rem;
   color: firebrick;
 }
-h3 {
+html .container h3 {
   font-size: 2rem;
   color: lightcoral;
 }
-h4 {
+html .container h4 {
   font-size: 1.5rem;
 }
-p {
-  font-size: 1rem;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  line-height: 3;
-}
-.container {
-  width: 1100px;
-}
-header {
+html .container header {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-header h1 {
+html .container header h1 {
   background-color: slategrey;
   font-size: 2rem;
   border: 1px solid black;
+  padding: 3%;
 }
-nav a {
+html .container header nav a {
   text-decoration: none;
   font-size: 2rem;
 }
-section .info {
+html section {
+  margin-top: 200px 1%;
+}
+html section .info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background: slategrey;
   border: 1px double black;
   margin: 0 2%;
 }
-section .intro {
+html section .intro {
   margin: 0.5rem;
 }
-.skills {
+html section .skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
-.skills div {
+html section .skills div {
   padding: 2%;
   background: slategrey;
   border: 1px double black;
   margin: 0 2%;
 }
-.work {
+html section .work {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
-.job {
+html section .work .job {
   background: slategrey;
   border: 1px double black;
   margin: 0 2%;
