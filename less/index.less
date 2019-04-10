@@ -52,6 +52,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html, body {
+	height: 100%;
+}
 //variables
 //colors
 @main-color: firebrick; 
@@ -71,22 +74,19 @@ table {
 }
 
 .slatebox{
-
+	
 	background: @secondary-color;
 	border:1px double black;
 	margin:0 2%;
-
+	
 }
 
 html{
 	background: @background-color;
 	font-size:62.5%;
-	
-}
-html, body {
-	height: 100%;
 	font-family:  @font;
 
+	
 }
 h2{
 	font-size:4rem;
@@ -108,42 +108,43 @@ p{
 	line-height: 3;
 }
 .container{
-	width:1100px;
-	
-	
+	width:1100px;	
 }
+
 header{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
+
 header h1{
 
 	background-color:@secondary-color;
 	font-size: 2rem;
 	border:1px solid black;
-	// width:100%;
-
 }
+
 nav a{
 	text-decoration: none;
 	font-size:2rem;
 
 }
-section .info {
-.centerevenly;
-.slatebox;
-
+section{
+	margin-top:200px 1%;
 }
+section .info {
+	.centerevenly;
+	.slatebox;
+}
+
 section .intro{
 	margin: .5rem;
 	
 
 }
 .skills {
-// .slatebox;
-.centerevenly;
+	.centerevenly;
 
 }
 .skills div{
@@ -155,12 +156,12 @@ section .intro{
 }
 
 .work {
-
-.centerevenly;
+	.centerevenly;
 }
+
 .job{
-.slatebox;
-padding:3% 5%;
+	.slatebox;
+	padding:3% 5%;
 
 }
 

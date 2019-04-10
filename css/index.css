@@ -130,6 +130,10 @@ table {
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 .centerevenly {
   display: flex;
   justify-content: space-evenly;
@@ -143,10 +147,6 @@ table {
 html {
   background: #fffaff;
   font-size: 62.5%;
-}
-html,
-body {
-  height: 100%;
   font-family: Impact, Charcoal, sans-serif;
 }
 h2 {
