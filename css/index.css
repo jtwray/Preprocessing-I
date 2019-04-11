@@ -1,1 +1,254 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  background: slategray;
+  font-size: 62.5%;
+  font-family: Impact, Charcoal, sans-serif;
+}
+html .container {
+  max-width: 1100px;
+  background: #fffaff;
+  border: 1px double black;
+  margin: 0 2%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  html .container {
+    max-width: 100%;
+  }
+}
+html .container li {
+  font-size: 1.5rem;
+}
+html .container p {
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  line-height: 2;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  html .container p {
+    font-size: 1em;
+    padding: 0.2em;
+  }
+}
+html .container h2 {
+  font-size: 4rem;
+  color: firebrick;
+}
+html .container h3 {
+  font-size: 2rem;
+  color: lightcoral;
+}
+html .container h4 {
+  font-size: 1.5rem;
+}
+html .container header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+html .container header h1 {
+  background-color: #fffaff;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 3%;
+}
+html .container header nav {
+  margin: auto;
+}
+html .container header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: auto;
+}
+html section {
+  margin-top: 200px 1%;
+}
+html section .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fffaff;
+  border: 1px double black;
+  margin: 0 2%;
+  border: none;
+  margin: auto;
+}
+html section .info p {
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
+}
+html section .intro {
+  margin: 0.5rem;
+}
+html section .skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+html section .skills div {
+  padding: 2%;
+  background: #fffaff;
+  border: 1px double black;
+  margin: 0 2%;
+}
+html section .work {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+html section .work .job {
+  background: #fffaff;
+  border: 1px double black;
+  margin: 0 2%;
+  padding: 3% 5%;
+}
+main {
+  display: flex;
+  padding: 1rem;
+}
+main section {
+  padding: 1rem;
+  border-top: 1rem inset black;
+  max-width: 45%;
+}
+main .leftcol {
+  border-right: 3px double firebrick;
+}
